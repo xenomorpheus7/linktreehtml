@@ -1,0 +1,113 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #111;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .profile-card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 320px;
+  }
+  
+  .profile-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .location {
+    color: #7FFF00; /* Neon green color */
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+  
+  .bio {
+    font-style: italic;
+    color: #aaa;
+    margin-bottom: 20px;
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .link-button {
+    text-decoration: none;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1em;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s;
+  }
+  
+  .link-button:hover {
+    background-color: #444;
+  }
+  
+  /* Responsive Design (for Mobile Screens) */
+@media (max-width: 768px) { /* ## Styles for screens 768px or smaller */
+    body {
+      flex-direction: column; /* ## Stack items vertically on smaller screens */
+      padding: 10px; /* ## Add padding to prevent items from hitting screen edges */
+    }
+  
+    .profile-card {
+      width: 90%; /* ## Make the card width adjust to fit smaller screens */
+      padding: 15px; /* ## Reduce padding inside the card for smaller screens */
+    }
+  
+    .profile-image {
+      width: 60px; /* ## Shrink the profile image */
+      height: 60px; /* ## Shrink the profile image height */
+      margin-bottom: 10px; /* ## Reduce space below the image */
+    }
+  
+    .name {
+      font-size: 1.2em; /* ## Reduce the font size of the name */
+    }
+  
+    .location {
+      font-size: 0.9em; /* ## Reduce the font size of the location text */
+    }
+  
+    .link-button {
+      font-size: 0.9em; /* ## Reduce button text size for better fit */
+      padding: 8px; /* ## Reduce button padding for a more compact layout */
+    }
+  }
